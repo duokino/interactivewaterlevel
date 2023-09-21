@@ -8,16 +8,16 @@
 #include <ArduinoJson.h>
 
 // Replace with your network credentials
-const char* ssid = "KKBPJ-Pejabat";
-const char* password = "kkbpj@pejabat#";
+const char* ssid = "REPLACE_WITH_YOUR_SSID";
+const char* password = "REPLACE_WITH_YOUR_PASSWORD";
 
 // Initialize Telegram BOT
-#define BOTtoken "6490893824:AAGT5LL3JhjrE1wg1R3v0bDwTSLsq7z1nEI"  // your Bot Token (Get from Botfather)
+#define BOTtoken "XXXXXXXXXX:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"  // your Bot Token (Get from Botfather)
 
 // Use @myidbot to find out the chat ID of an individual or a group
 // Also note that you need to click "start" on a bot before it can
 // message you
-#define CHAT_ID "-1001982302053"
+#define CHAT_ID "-XXXXXXXXXX"  // find the groupID in page and add -100 at the front groupID
 
 #ifdef ESP8266
   X509List cert(TELEGRAM_CERTIFICATE_ROOT);
