@@ -17,6 +17,7 @@ CTBot myBot;
 String ssid = "mySSID";     // REPLACE mySSID WITH YOUR WIFI SSID
 String pass = "myPassword"; // REPLACE myPassword YOUR WIFI PASSWORD, IF ANY
 String token = "myToken";   // REPLACE myToken WITH YOUR TELEGRAM BOT TOKEN
+// for group ID, find in the page and add -100 at the front group ID
 
 
 uint8_t led = 2;            // the onboard ESP32 LED.
