@@ -5,6 +5,12 @@
 //
 // Additionally it can also turn ON and OFF the Light using /lighton and /lightoff
 // Be sure to connect the ESP32 to the local WiFi signal
+//
+// Pin for HC-SR04 to ESP32
+// Vcc  -> VIN
+// Trig -> GPIO 13
+// Echo -> GPIO 12
+// Gnd  -> GND
 
 
 #include <Arduino.h>
