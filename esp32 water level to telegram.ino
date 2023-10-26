@@ -110,13 +110,13 @@ void loop() {
 
   if (readWaterLevel() < 0) {
     Serial.println("Please relocate the sensor");
-    myBot.sendMessage(msg.sender.id, "Please relocate the sensor");  // notify the sender
+    myBot.sendMessage(msg.sender.id, "Please relocate the sensor");  // notify the sender. can change with telegram group ID
   }
   else if (readWaterLevel() > alert_threshold) {
     Serial.println("Alert: Water level above normal threshold!");
     myBot.sendMessage(msg.sender.id, "Alert: Water level above normal threshold!");  // notify the sender
     String message = "Water Level: " + String(waterlevel) + " cm";
-    myBot.sendMessage(msg.sender.id, message);  // notify the sender
+    myBot.sendMessage(msg.sender.id, message);  // notify the sender. can change with telegram group ID
   }
 
 }
